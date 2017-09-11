@@ -1,0 +1,37 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.formatOnType": false,
+    "editor.formatOnSave": true,
+    "editor.fontFamily": "'Source Code Pro', 'Consolas', 'Droid Sans Mono', monospace",
+    "editor.fontSize": 14,
+    "editor.renderWhitespace": "boundary",
+    "editor.renderIndentGuides": true,
+    "editor.cursorBlinking": "blink",
+    "editor.cursorStyle": "underline",
+    "editor.detectIndentation": true,
+    "editor.tabSize": 2,
+    "editor.smoothScrolling": true,
+    "editor.minimap.enabled": false,
+    "editor.dragAndDrop": false,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.autoSave": "off",
+    "files.exclude": {
+        "**/*.map": true
+    },
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "workbench.editor.showTabs": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.iconTheme": "vs-seti",
+    "window.menuBarVisibility": "toggle",
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx"
+    },
+    "html.format.preserveNewLines": true,
+    "standard.enable": false,
+    "less.validate": false,
+    "window.zoomLevel": 0
+}
