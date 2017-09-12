@@ -2,10 +2,10 @@
 {
     "editor.formatOnType": false,
     "editor.formatOnSave": true,
-    "editor.fontFamily": "'Source Code Pro', 'Consolas', 'Droid Sans Mono', monospace",
-    "editor.fontSize": 14,
+    "editor.fontFamily": "'Consolas', 'Droid Sans Mono', monospace",
+    "editor.fontSize": 15,
     "editor.renderWhitespace": "boundary",
-    "editor.renderIndentGuides": true,
+    "editor.renderIndentGuides": false,
     "editor.cursorBlinking": "blink",
     "editor.cursorStyle": "underline",
     "editor.detectIndentation": true,
