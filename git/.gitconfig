@@ -1,3 +1,24 @@
+[code]
+	editor = code --wait
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+
 [user]
 	email = mihail.tratsiuk@gmail.com
 	name = Mihail Tratsiuk
+
+[push]
+	default = current
+
+[alias]
+	co = checkout
+	cob = checkout -b
+	pushf = push --force
+	rb = rebase
+	rbi = "!f() { git rebase -i HEAD~$1; }; f"
