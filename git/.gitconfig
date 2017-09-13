@@ -22,3 +22,4 @@
 	pushf = push --force
 	rb = rebase
 	rbi = "!f() { git rebase -i HEAD~$1; }; f"
+	amend = commit --amend
