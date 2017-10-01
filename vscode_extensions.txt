@@ -1,0 +1,12 @@
+EditorConfig.EditorConfig
+PeterJausovec.vscode-docker
+chenxsan.vscode-standardjs
+christian-kohler.npm-intellisense
+cssho.vscode-svgviewer
+dbaeumer.vscode-eslint
+donjayamanne.githistory
+donjayamanne.python
+numso.prettier-standard-vscode
+qinjia.seti-icons
+ryu1kn.annotator
+xabikos.ReactSnippets

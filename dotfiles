@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+VSCODE_EXTENSIONS_PATH="vscode_extensions.txt"
+TILIX_DCONF_PATH="tilix.dconf"
+
+case "$1" in
+  load)
+    LOADING=true
+    ;;
+  dump)
+    ;;
+  *)
+    echo "Argument required: load|dump"
+    exit 1
+    ;;
+esac
+
+vscode() {
+  if [[ $LOADING ]]; then
+    while read extension; do
+      code --install-extension $extension
+    done < $VSCODE_EXTENSIONS_PATH
+  else
+    code --list-extensions > $VSCODE_EXTENSIONS_PATH
+  fi
+}
+
+tilix() {
+  if [[ $LOADING ]]; then
+    dconf load /com/gexperts/Tilix/ < $TILIX_DCONF_PATH
+  else
+    dconf dump /com/gexperts/Tilix/ > $TILIX_DCONF_PATH
+  fi
+}
+
+vscode
+tilix
