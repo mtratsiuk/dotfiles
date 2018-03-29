@@ -25,13 +25,30 @@
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.colorTheme": "Visual Studio Light",
-    "workbench.iconTheme": "vs-seti",
     "window.menuBarVisibility": "toggle",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
     "emmet.syntaxProfiles": {
         "javascript": "jsx"
     },
     "html.format.preserveNewLines": true,
     "standard.enable": false,
     "less.validate": false,
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": true,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    },
+    "gitlens.codeLens.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "gitlens.keymap": "alternate",
+    "explorer.confirmDelete": false,
+    "prettier.eslintIntegration": true
 }

@@ -1,12 +1,15 @@
+DavidAnson.vscode-markdownlint
 EditorConfig.EditorConfig
 PeterJausovec.vscode-docker
 chenxsan.vscode-standardjs
+christian-kohler.path-intellisense
 christian-kohler.npm-intellisense
 cssho.vscode-svgviewer
 dbaeumer.vscode-eslint
 donjayamanne.githistory
-donjayamanne.python
+eamodio.gitlens
+esbenp.prettier-vscode
 numso.prettier-standard-vscode
-qinjia.seti-icons
+ms-python.python
 ryu1kn.annotator
 xabikos.ReactSnippets
