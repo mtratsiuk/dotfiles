@@ -1,54 +1,58 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.formatOnType": false,
-    "editor.formatOnSave": true,
-    "editor.fontFamily": "'Consolas', 'Droid Sans Mono', monospace",
-    "editor.fontSize": 15,
-    "editor.renderWhitespace": "boundary",
-    "editor.renderIndentGuides": false,
-    "editor.cursorBlinking": "blink",
-    "editor.cursorStyle": "underline",
-    "editor.detectIndentation": true,
-    "editor.tabSize": 2,
-    "editor.smoothScrolling": true,
-    "editor.minimap.enabled": false,
-    "editor.dragAndDrop": false,
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "files.autoSave": "off",
-    "files.exclude": {
-        "**/*.map": true
-    },
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-    "workbench.editor.showTabs": false,
-    "workbench.editor.enablePreview": false,
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "workbench.colorTheme": "Visual Studio Light",
-    "window.menuBarVisibility": "toggle",
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
-    "emmet.syntaxProfiles": {
-        "javascript": "jsx"
-    },
-    "html.format.preserveNewLines": true,
-    "standard.enable": false,
-    "less.validate": false,
-    "window.zoomLevel": 0,
-    "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": true,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressUpdateNotice": false,
-        "suppressWelcomeNotice": true
-    },
-    "gitlens.codeLens.enabled": false,
-    "explorer.confirmDragAndDrop": false,
-    "gitlens.keymap": "alternate",
-    "explorer.confirmDelete": false,
-    "prettier.eslintIntegration": true
+  "editor.formatOnType": false,
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "'Consolas', 'Droid Sans Mono', monospace",
+  "editor.fontSize": 15,
+  "editor.renderWhitespace": "boundary",
+  "editor.renderIndentGuides": false,
+  "editor.cursorBlinking": "blink",
+  "editor.cursorStyle": "underline",
+  "editor.detectIndentation": true,
+  "editor.tabSize": 2,
+  "editor.smoothScrolling": true,
+  "editor.minimap.enabled": false,
+  "editor.dragAndDrop": false,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "off",
+  "files.exclude": {
+    "**/*.map": true
+  },
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "workbench.editor.showTabs": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.colorTheme": "Visual Studio Light",
+  "window.menuBarVisibility": "toggle",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "html.format.preserveNewLines": true,
+  "standard.enable": false,
+  "less.validate": false,
+  "window.zoomLevel": 0,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": true,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true,
+    "suppressUpdateNotice": false,
+    "suppressWelcomeNotice": true
+  },
+  "gitlens.codeLens.enabled": false,
+  "gitlens.keymap": "none",
+  "gitlens.historyExplorer.enabled": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "prettier.eslintIntegration": true,
+  "prettier.disableLanguages": ["json"]
 }
