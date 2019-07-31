@@ -17,6 +17,7 @@
 
 [push]
 	default = current
+	followTags = true
 
 [alias]
 	co = checkout
