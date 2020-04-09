@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 VSCODE_EXTENSIONS_PATH="vscode_extensions.txt"
-TILIX_DCONF_PATH="tilix.dconf"
+TERMINAL_DCONF_PATH="gnome_terminal_dconf.txt"
 
 case "$1" in
   load)
@@ -25,13 +25,13 @@ vscode() {
   fi
 }
 
-tilix() {
+terminal() {
   if [[ $LOADING ]]; then
-    dconf load /com/gexperts/Tilix/ < $TILIX_DCONF_PATH
+    dconf load /org/gnome/terminal/ < $TERMINAL_DCONF_PATH
   else
-    dconf dump /com/gexperts/Tilix/ > $TILIX_DCONF_PATH
+    dconf dump /org/gnome/terminal/ > $TERMINAL_DCONF_PATH
   fi
 }
 
 vscode
-tilix
+terminal

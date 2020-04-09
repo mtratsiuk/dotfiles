@@ -1,0 +1,9 @@
+[legacy]
+new-terminal-mode='tab'
+theme-variant='light'
+
+[legacy/keybindings]
+close-tab='<Primary>w'
+new-tab='<Primary>d'
+next-tab='<Primary>2'
+prev-tab='<Primary>1'
