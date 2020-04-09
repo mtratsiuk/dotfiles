@@ -70,5 +70,7 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "eslint.autoFixOnSave": true
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }

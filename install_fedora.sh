@@ -2,7 +2,6 @@
 
 # NVidia https://rpmfusion.org/Howto/NVIDIA
 # Docker https://docs.docker.com/engine/install/fedora/ https://docs.docker.com/engine/install/linux-postinstall/
-# nvm https://github.com/nvm-sh/nvm#install--update-script
 
 sudo dnf install -y \
 	https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
@@ -29,3 +28,11 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 flatpak install -y flathub \
 	com.slack.Slack \
 	com.skype.Client
+
+# Install nvm https://github.com/nvm-sh/nvm#install--update-script
+cd ~
+git clone https://github.com/nvm-sh/nvm.git .nvm
+cd ~/.nvm
+git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)`
+. nvm.sh
+nvm install --lts
