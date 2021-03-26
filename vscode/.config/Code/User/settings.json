@@ -1,7 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
   "editor.formatOnType": false,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.fontFamily": "'Consolas', 'Droid Sans Mono', monospace",
   "editor.fontSize": 15,
   "editor.renderWhitespace": "boundary",
@@ -33,9 +33,7 @@
     "javascript": "jsx"
   },
   "html.format.preserveNewLines": true,
-  "standard.enable": false,
   "less.validate": false,
-  "window.zoomLevel": 0,
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": true,
@@ -43,16 +41,11 @@
     "suppressGitVersionWarning": false,
     "suppressLineUncommittedWarning": false,
     "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": false,
-    "suppressShowKeyBindingsNotice": true,
-    "suppressUpdateNotice": false,
-    "suppressWelcomeNotice": true
   },
   "gitlens.codeLens.enabled": false,
   "gitlens.keymap": "none",
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  "prettier.disableLanguages": ["json", "markdown"],
   "git.autofetch": true,
   "prettier.printWidth": 110,
   "[javascript]": {
@@ -65,12 +58,19 @@
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.formatOnSaveMode": "modifications",
 }
