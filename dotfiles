@@ -18,7 +18,7 @@ esac
 vscode() {
   if [[ $LOADING ]]; then
     while read extension; do
-      code --install-extension $extension
+      code --install-extension $extension --force
     done < $VSCODE_EXTENSIONS_PATH
   else
     code --list-extensions > $VSCODE_EXTENSIONS_PATH
