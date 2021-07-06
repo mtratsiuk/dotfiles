@@ -43,7 +43,7 @@
   "gitlens.keymap": "none",
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  "git.autofetch": true,
+  "git.autofetch": true
 }
 
 // eslint projects formatting:

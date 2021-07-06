@@ -1,13 +1,25 @@
 [core]
 	excludesfile = ~/.gitignore_global
+	editor = vim
+
+[merge]
+	tool = vscode
+
+[mergetool "vscode"]
+	cmd = 'code' --wait $MERGED
+
 [diff]
-	tool = default-difftool
-[difftool "default-difftool"]
-	cmd = code --wait --diff $LOCAL $REMOTE
+	tool = vscode
+
+[difftool "vscode"]
+	cmd = 'code' --wait --diff $LOCAL $REMOTE
 
 [user]
 	email = mihail.tratsiuk@gmail.com
 	name = Mihail Tratsiuk
+
+[pull]
+	ff = only
 
 [push]
 	default = current
