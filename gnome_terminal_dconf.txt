@@ -4,6 +4,6 @@ theme-variant='light'
 
 [legacy/keybindings]
 close-tab='<Primary>w'
-new-tab='<Primary>d'
+new-tab='<Primary>t'
 next-tab='<Primary>2'
 prev-tab='<Primary>1'
