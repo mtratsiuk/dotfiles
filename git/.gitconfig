@@ -15,7 +15,7 @@
 	cmd = 'code' --wait --diff $LOCAL $REMOTE
 
 [user]
-	email = mihail.tratsiuk@gmail.com
+	email = git@mtratsi.uk
 	name = Mihail Tratsiuk
 
 [pull]
