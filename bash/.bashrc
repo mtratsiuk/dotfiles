@@ -20,3 +20,4 @@ pgadmin() {
     mkdir -p ~/.pgadmin
     docker run --rm -d --network host -v ~/.pgadmin:/pgadmin thajeztah/pgadmin4
 }
+. "$HOME/.cargo/env"

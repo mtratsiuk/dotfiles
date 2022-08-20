@@ -1,13 +1,21 @@
 #!/usr/bin/env bash
 
+set -eu
+set -o pipefail
+
 VSCODE_EXTENSIONS_PATH="vscode_extensions.txt"
-TERMINAL_DCONF_PATH="gnome_terminal_dconf.txt"
+DCONF_TERMINAL_PATH="gnome_terminal_dconf.txt"
+DCONF_KEYBINDINGS_PATH="gnome_keybindings_dconf.txt"
+DCONF_AUTOMOVEWINDOWS_PATH="gnome_automovewindows_dconf.txt"
+
+action=""
 
 case "$1" in
   load)
-    LOADING=true
+    action="load"
     ;;
   dump)
+    action="dump"
     ;;
   *)
     echo "Argument required: load|dump"
@@ -16,7 +24,7 @@ case "$1" in
 esac
 
 vscode() {
-  if [[ $LOADING ]]; then
+  if [[ $action == "load" ]]; then
     while read extension; do
       code --install-extension $extension --force
     done < $VSCODE_EXTENSIONS_PATH
@@ -25,13 +33,17 @@ vscode() {
   fi
 }
 
-terminal() {
-  if [[ $LOADING ]]; then
-    dconf load /org/gnome/terminal/ < $TERMINAL_DCONF_PATH
+gnome_dconf() {
+  if [[ $action == "load" ]]; then
+    dconf load /org/gnome/terminal/ < $DCONF_TERMINAL_PATH
+    dconf load /org/gnome/desktop/wm/keybindings/ < $DCONF_KEYBINDINGS_PATH
+    dconf load /org/gnome/shell/extensions/auto-move-windows/ < $DCONF_AUTOMOVEWINDOWS_PATH
   else
-    dconf dump /org/gnome/terminal/ > $TERMINAL_DCONF_PATH
+    dconf dump /org/gnome/terminal/ > $DCONF_TERMINAL_PATH
+    dconf dump /org/gnome/desktop/wm/keybindings/ > $DCONF_KEYBINDINGS_PATH
+    dconf dump /org/gnome/shell/extensions/auto-move-windows/ > $DCONF_AUTOMOVEWINDOWS_PATH
   fi
 }
 
 vscode
-terminal
+gnome_dconf

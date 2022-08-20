@@ -45,5 +45,20 @@
         "key": "Escape",
         "command": "extension.jumpy-exit",
         "when": "editorTextFocus && jumpy.isJumpyMode"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "git.stage",
+        "when": "activeViewlet == 'workbench.view.scm'"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "git.unstage",
+        "when": "activeViewlet == 'workbench.view.scm'"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "git.clean",
+        "when": "activeViewlet == 'workbench.view.scm'"
     }
 ]

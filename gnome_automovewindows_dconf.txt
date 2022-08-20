@@ -1,0 +1,2 @@
+[/]
+application-list=['org.gnome.Terminal.desktop:2', 'google-chrome.desktop:1', 'code.desktop:3', 'com.slack.Slack.desktop:4', 'org.telegram.desktop.desktop:4']
