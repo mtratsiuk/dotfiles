@@ -39,5 +39,40 @@
     {
         "key": "cmd+shift+n",
         "command": "explorer.newFolder"
-    }
+    },
+    {
+        "key": "ctrl+Enter",
+        "command": "editor.action.selectHighlights",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+g",
+        "command": "workbench.view.scm",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+up",
+        "command": "git.stage",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+    },
+    {
+        "key": "cmd+down",
+        "command": "git.unstage",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+    },
+    {
+        "key": "cmd+r",
+        "command": "git.clean",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+    },
 ]

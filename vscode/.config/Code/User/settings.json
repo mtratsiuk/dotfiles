@@ -43,6 +43,10 @@
   "explorer.openEditors.visible": 0,
   "git.autofetch": true,
   "debug.javascript.unmapMissingSources": true,
+  "editor.suggestSelection": "first",
+  "gitlens.hovers.currentLine.over": "line",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
   "files.associations": {
     "*.mt": "clojure"
   },
