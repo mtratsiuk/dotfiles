@@ -75,4 +75,9 @@
         "command": "git.clean",
         "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
     },
+    {
+        "key": "cmd+f",
+        "command": "-list.find",
+        "when": "listFocus && listSupportsFind"
+    },
 ]

@@ -60,5 +60,10 @@
         "key": "ctrl+r",
         "command": "git.clean",
         "when": "activeViewlet == 'workbench.view.scm'"
-    }
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-list.find",
+        "when": "listFocus && listSupportsFind"
+    },
 ]
