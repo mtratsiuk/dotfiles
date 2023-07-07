@@ -149,7 +149,11 @@
       "editorWidget.border": "#0f4a85",
       "editorWidget.foreground": "#292929",
     }
-  }
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "extensions.ignoreRecommendations": true
 }
 
 // eslint projects formatting:
