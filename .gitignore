@@ -1,4 +1,6 @@
 vscode
 !vscode/.config/Code/User
+vscode_mac
+!vscode_mac/Library/Application Support/Code/User
 
 git/.gitconfig_local
