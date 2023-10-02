@@ -80,4 +80,19 @@
         "command": "-list.find",
         "when": "listFocus && listSupportsFind"
     },
+    {
+        "key": "F2",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+        "key": "enter",
+        "command": "-renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+        "key": "enter",
+        "command": "list.select",
+        "when": "listFocus && !inputFocus"
+    }
 ]
