@@ -1,7 +1,7 @@
 {
   "editor.formatOnType": false,
   "editor.formatOnSave": true,
-  "editor.formatOnSaveMode": "modifications",
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
   "editor.fontFamily": "'Consolas', 'Droid Sans Mono', monospace",
   "editor.fontSize": 16,
   "editor.renderWhitespace": "boundary",
@@ -9,14 +9,14 @@
   "editor.cursorStyle": "underline",
   "editor.detectIndentation": true,
   "editor.tabSize": 2,
-  "editor.smoothScrolling": true,
+  "editor.smoothScrolling": false,
   "editor.minimap.enabled": false,
   "editor.dragAndDrop": false,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.autoSave": "off",
   "telemetry.telemetryLevel": "off",
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": "single",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.colorTheme": "Visual Studio Light",
@@ -148,7 +148,14 @@
       "editorWidget.border": "#0f4a85",
       "editorWidget.foreground": "#292929",
     }
-  }
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "extensions.ignoreRecommendations": true,
 }
 // eslint projects formatting:
 //
