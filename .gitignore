@@ -1,6 +1,8 @@
 vscode
-!vscode/.config/Code/User
+!vscode/.config/Code/User/keybindings.json
+!vscode/.config/Code/User/settings.json
 vscode_mac
-!vscode_mac/Library/Application Support/Code/User
+!vscode_mac/Library/Application Support/Code/User/keybindings.json
+!vscode_mac/Library/Application Support/Code/User/settings.json
 
 git/.gitconfig_local

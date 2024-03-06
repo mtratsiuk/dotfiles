@@ -67,15 +67,15 @@
         "when": "listFocus && listSupportsFind"
     },
     {
-        "key": "alt+left",
+        "key": "ctrl+alt+left",
         "command": "workbench.action.navigateBack"
     },
     {
-        "key": "alt+right",
+        "key": "ctrl+alt+right",
         "command": "workbench.action.navigateForward"
     },
     {
-        "key": "alt+enter",
+        "key": "ctrl+alt+enter",
         "command": "editor.action.goToDeclaration"
     },
 ]
