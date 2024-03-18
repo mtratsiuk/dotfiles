@@ -78,4 +78,13 @@
         "key": "ctrl+alt+enter",
         "command": "editor.action.goToDeclaration"
     },
+    {
+        "key": "ctrl+k n",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "langId": "go",
+            "name": "New method"
+        }
+    }
 ]
