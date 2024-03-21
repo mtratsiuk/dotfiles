@@ -9,14 +9,13 @@
   "editor.cursorStyle": "underline",
   "editor.detectIndentation": true,
   "editor.tabSize": 2,
-  "editor.smoothScrolling": true,
   "editor.minimap.enabled": false,
   "editor.dragAndDrop": false,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.autoSave": "off",
   "telemetry.telemetryLevel": "off",
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": "single",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.colorTheme": "Visual Studio Light",
@@ -153,7 +152,14 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "extensions.ignoreRecommendations": true
+  "extensions.ignoreRecommendations": true,
+  "git.openRepositoryInParentFolders": "never",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  }
 }
 
 // eslint projects formatting:
