@@ -1,0 +1,8 @@
+[/]
+dynamic-workspaces=false
+edge-tiling=false
+experimental-features=@as []
+
+[keybindings]
+toggle-tiled-left=['<Super>Left']
+toggle-tiled-right=['<Super>Right']

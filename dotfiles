@@ -7,6 +7,8 @@ VSCODE_EXTENSIONS_PATH="vscode_extensions.txt"
 DCONF_TERMINAL_PATH="gnome_terminal_dconf.txt"
 DCONF_KEYBINDINGS_PATH="gnome_keybindings_dconf.txt"
 DCONF_AUTOMOVEWINDOWS_PATH="gnome_automovewindows_dconf.txt"
+DCONF_MUTTER_PATH="gnome_mutter_dconf.txt"
+DCONF_WM_PREFERENCES_PATH="gnome_wm_preferences_dconf.txt"
 
 action=""
 
@@ -38,10 +40,14 @@ gnome_dconf() {
     dconf load /org/gnome/terminal/ < $DCONF_TERMINAL_PATH
     dconf load /org/gnome/desktop/wm/keybindings/ < $DCONF_KEYBINDINGS_PATH
     dconf load /org/gnome/shell/extensions/auto-move-windows/ < $DCONF_AUTOMOVEWINDOWS_PATH
+    dconf load /org/gnome/mutter/ < $DCONF_MUTTER_PATH
+    dconf load /org/gnome/desktop/wm/preferences/ < $DCONF_WM_PREFERENCES_PATH
   else
     dconf dump /org/gnome/terminal/ > $DCONF_TERMINAL_PATH
     dconf dump /org/gnome/desktop/wm/keybindings/ > $DCONF_KEYBINDINGS_PATH
     dconf dump /org/gnome/shell/extensions/auto-move-windows/ > $DCONF_AUTOMOVEWINDOWS_PATH
+    dconf dump /org/gnome/mutter/ > $DCONF_MUTTER_PATH
+    dconf dump /org/gnome/desktop/wm/preferences/ > $DCONF_WM_PREFERENCES_PATH
   fi
 }
 

@@ -7,3 +7,7 @@ close-tab='<Primary>w'
 new-tab='<Primary>t'
 next-tab='<Primary>2'
 prev-tab='<Primary>1'
+
+[legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+scroll-on-output=false
+use-theme-colors=true

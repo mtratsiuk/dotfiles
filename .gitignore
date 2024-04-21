@@ -1,8 +1,19 @@
-vscode
+vscode/**/*
+!vscode/.config
+!vscode/.config/Code
+!vscode/.config/Code/User
 !vscode/.config/Code/User/keybindings.json
 !vscode/.config/Code/User/settings.json
-vscode_mac
+!vscode/.config/Code/User/snippets/
+!vscode/.config/Code/User/snippets/*
+vscode_mac/**/*
+!vscode_mac/Library/
+!vscode_mac/Library/Application Support
+!vscode_mac/Library/Application Support/Code
+!vscode_mac/Library/Application Support/Code/User
 !vscode_mac/Library/Application Support/Code/User/keybindings.json
 !vscode_mac/Library/Application Support/Code/User/settings.json
+!vscode_mac/Library/Application Support/Code/User/snippets
+!vscode_mac/Library/Application Support/Code/User/snippets/*
 
 git/.gitconfig_local
