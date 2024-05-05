@@ -156,6 +156,10 @@
     "editor.defaultFormatter": "golang.go"
   },
   "extensions.ignoreRecommendations": true,
+  "window.zoomLevel": -1,
+  "go.toolsManagement.autoUpdate": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.preferredHighContrastColorTheme": "Visual Studio Light",
 }
 // eslint projects formatting:
 //

@@ -18,6 +18,8 @@ space = "all"
 tab = "all"
 newline = "none"
 
+[editor.file-picker]
+hidden = false
 
 [keys.normal]
 C-s = ":w"
