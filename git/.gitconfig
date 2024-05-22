@@ -33,8 +33,8 @@
 	rbi = "!f() { git rebase -i HEAD~$1; }; f"
 	amend = commit --amend
 	br = branch
-	prunebr = "!f() { git co master && git br | grep -v 'master' | xargs git br -d; }; f"
-	prunebrf = "!f() { git co master && git br | grep -v 'master' | xargs git br -D; }; f"
+	prunebr = "!f() { master=$(git br -l --format '%(refname:short)' main master); git co $master && git br | grep -v "$master" | xargs git br -d; }; f"
+	prunebrf = "!f() { master=$(git br -l --format '%(refname:short)' main master); git co $master && git br | grep -v "$master" | xargs git br -D; }; f"
 	prunefs = "!f() { git clean -dfx -e .vscode -e .env*; }; f"
 
 [include]
