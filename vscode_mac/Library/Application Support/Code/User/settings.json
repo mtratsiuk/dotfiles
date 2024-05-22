@@ -161,6 +161,7 @@
     "scminput": false
   },
   "workbench.preferredHighContrastColorTheme": "Visual Studio Light",
+  "editor.accessibilitySupport": "off"
 }
 
 // eslint projects formatting:
