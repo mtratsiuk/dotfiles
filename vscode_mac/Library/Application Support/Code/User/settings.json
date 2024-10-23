@@ -11,6 +11,7 @@
   "editor.tabSize": 2,
   "editor.minimap.enabled": false,
   "editor.dragAndDrop": false,
+  "editor.find.autoFindInSelection": "multiline",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.autoSave": "off",
@@ -161,7 +162,13 @@
     "scminput": false
   },
   "workbench.preferredHighContrastColorTheme": "Visual Studio Light",
-  "editor.accessibilitySupport": "off"
+  "editor.accessibilitySupport": "off",
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  }
 }
 
 // eslint projects formatting:
