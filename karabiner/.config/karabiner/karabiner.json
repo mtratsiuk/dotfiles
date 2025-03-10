@@ -412,6 +412,16 @@
                                     "key_code": "left_control"
                                 }
                             ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "left_gui"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "left_option"
+                                }
+                            ]
                         }
                     ],
                     "treat_as_built_in_keyboard": false
