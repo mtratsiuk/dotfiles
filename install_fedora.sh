@@ -42,12 +42,13 @@ git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --
 nvm install --lts
 
 # Install golang https://go.dev/dl/
-GO_DL_VER="1.23.4" && \
+GO_DL_VER="1.24.1" && \
 GO_DL_TAR_NAME="go${GO_DL_VER}.linux-amd64.tar.gz" && \
 GO_DL_DIR="/tmp/__go_dl" && \
 	sudo rm -rf /usr/local/go && \
 	mkdir -p $GO_DL_DIR && \
 	wget -P $GO_DL_DIR "https://go.dev/dl/${GO_DL_TAR_NAME}" && \
+	rm -rf /usr/local/go && \
 	sudo tar -C /usr/local -xzf "${GO_DL_DIR}/${GO_DL_TAR_NAME}" && \
 	rm -rf $GO_DL_DIR
 
