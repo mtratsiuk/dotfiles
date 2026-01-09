@@ -36,7 +36,9 @@
     "suppressLineUncommittedWarning": false,
     "suppressNoRepositoryWarning": false,
   },
-  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false, // in modern version
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.keymap": "none",
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
@@ -157,7 +159,6 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "extensions.ignoreRecommendations": true,
-  "git.openRepositoryInParentFolders": "never",
   "github.copilot.enable": {
     "*": false,
     "plaintext": false,
@@ -170,11 +171,19 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "chat.commandCenter.enabled": false
+  "chat.commandCenter.enabled": false,
+  "typescript.suggestionActions.enabled": false,
+  "typescript.surveys.enabled": false,
+  "typescript.tsserver.enableRegionDiagnostics": false,
+  "typescript.tsserver.maxTsServerMemory": 4096,
+  "typescript.updateImportsOnPaste.enabled": false,
+  "editor.pasteAs.enabled": false,
+  "update.showReleaseNotes": false,
+  "claudeCode.preferredLocation": "panel",
+  "go.toolsManagement.autoUpdate": true,
 }
-
 // eslint projects formatting:
 //
 // {

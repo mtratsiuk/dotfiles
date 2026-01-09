@@ -107,4 +107,12 @@
         "key": "ctrl+cmd+enter",
         "command": "editor.action.goToDeclaration"
     },
+    {
+        "key": "ctrl+right",
+        "command": "cursorLineEnd"
+    },
+    {
+        "key": "ctrl+left",
+        "command": "cursorLineStart"
+    },
 ]
