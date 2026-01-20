@@ -1,0 +1,204 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-shift-f": "editor::Format",
+    },
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-w": [
+        "pane::CloseAllItems",
+        {
+          "close_pinned": false,
+        },
+      ],
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-t": "pane::SplitRight",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-shift-down": "editor::DuplicateLineDown",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-shift-up": "editor::DuplicateLineUp",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-n": null,
+    },
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "ctrl-shift-n": "project_panel::NewDirectory",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-enter": "editor::SelectAllMatches",
+    },
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt-enter": "search::SelectAllMatches",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-down": [
+        "editor::AddSelectionBelow",
+        {
+          "skip_soft_wrap": true,
+        },
+      ],
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-up": [
+        "editor::AddSelectionAbove",
+        {
+          "skip_soft_wrap": true,
+        },
+      ],
+    },
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "enter": null,
+    },
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt-ctrl-left": "pane::GoBack",
+    },
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt-ctrl-right": "pane::GoForward",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-ctrl-left": "pane::GoBack",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-ctrl-right": "pane::GoForward",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-right": [
+        "editor::MoveToEndOfLine",
+        {
+          "stop_at_soft_wraps": true,
+        },
+      ],
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-left": [
+        "editor::MoveToBeginningOfLine",
+        {
+          "stop_at_soft_wraps": true,
+          "stop_at_indent": true,
+        },
+      ],
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-ctrl-enter": "editor::GoToDeclaration",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-f12": null,
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-ctrl-enter": "editor::GoToDefinition",
+    },
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "f3": "search::SelectNextMatch"
+    }
+  },
+  {
+    "context": "BufferSearchBar",
+    "bindings": {
+      "shift-f3": "search::SelectPreviousMatch"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "shift-f3": "search::SelectPreviousMatch"
+    }
+  },
+  {
+    "context": "ContextEditor > Editor",
+    "bindings": {
+      "shift-f3": "search::SelectPreviousMatch"
+    }
+  },
+  {
+    "context": "BufferSearchBar",
+    "bindings": {
+      "f3": "search::SelectNextMatch"
+    }
+  },
+  {
+    "context": "ContextEditor > Editor",
+    "bindings": {
+      "f3": "search::SelectNextMatch"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-e": [
+        "editor::GoToDiagnostic",
+        {
+          "severity": {
+            "min": "hint",
+            "max": "error"
+          }
+        }
+      ]
+    }
+  }
+]
