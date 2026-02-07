@@ -86,5 +86,15 @@
             "langId": "go",
             "name": "New method"
         }
-    }
+    },
+    {
+        "key": "ctrl+e",
+        "command": "editor.action.marker.next",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "editor.action.marker.prev",
+        "when": "editorFocus"
+    },
 ]

@@ -37,10 +37,13 @@
     "suppressNoRepositoryWarning": false,
   },
   "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.currentLine.enabled": false,
   "gitlens.keymap": "none",
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  "explorer.openEditors.visible": 0,
+  "explorer.openEditors.visible": 1,
   "git.autofetch": true,
   "debug.javascript.unmapMissingSources": true,
   "editor.suggestSelection": "first",
@@ -163,6 +166,13 @@
   "go.toolsManagement.autoUpdate": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "workbench.preferredHighContrastColorTheme": "Visual Studio Light",
+  "chat.commandCenter.enabled": false,
+  "python.analysis.typeCheckingMode": "strict",
+  "update.showReleaseNotes": false,
+  "go.survey.prompt": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
 }
 // eslint projects formatting:
 //

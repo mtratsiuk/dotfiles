@@ -1,2 +1,2 @@
 [/]
-application-list=['org.gnome.Terminal.desktop:2', 'google-chrome.desktop:1', 'code.desktop:3', 'com.slack.Slack.desktop:4', 'org.telegram.desktop.desktop:4', 'org.kde.kdenlive.desktop:5', 'com.obsproject.Studio.desktop:5']
+application-list=['org.gnome.Terminal.desktop:2', 'google-chrome.desktop:1', 'code.desktop:3', 'com.slack.Slack.desktop:4', 'org.telegram.desktop.desktop:4', 'org.kde.kdenlive.desktop:5', 'com.obsproject.Studio.desktop:5', 'dev.zed.Zed.desktop:3', 'app.zen_browser.zen.desktop:1']
