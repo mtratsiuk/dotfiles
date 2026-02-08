@@ -16,6 +16,7 @@
   "files.trimTrailingWhitespace": true,
   "files.autoSave": "off",
   "telemetry.telemetryLevel": "off",
+  "update.mode": "none",
   "workbench.editor.showTabs": "single",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,

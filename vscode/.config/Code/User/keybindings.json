@@ -97,4 +97,14 @@
         "command": "editor.action.marker.prev",
         "when": "editorFocus"
     },
+    {
+        "key": "alt+enter",
+        "command": "editor.action.wordHighlight.next",
+        "when": "editorTextFocus && hasWordHighlights"
+    },
+    {
+        "key": "f7",
+        "command": "-editor.action.wordHighlight.next",
+        "when": "editorTextFocus && hasWordHighlights"
+    },
 ]
