@@ -39,3 +39,12 @@
 
 [include]
 	path = ~/.gitconfig_local
+
+[commit]
+	gpgsign = true
+
+[tag]
+	gpgSign = true
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
