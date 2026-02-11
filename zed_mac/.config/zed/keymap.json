@@ -154,38 +154,38 @@
   {
     "context": "Pane",
     "bindings": {
-      "f3": "search::SelectNextMatch"
-    }
+      "f3": "search::SelectNextMatch",
+    },
   },
   {
     "context": "BufferSearchBar",
     "bindings": {
-      "shift-f3": "search::SelectPreviousMatch"
-    }
+      "shift-f3": "search::SelectPreviousMatch",
+    },
   },
   {
     "context": "Pane",
     "bindings": {
-      "shift-f3": "search::SelectPreviousMatch"
-    }
+      "shift-f3": "search::SelectPreviousMatch",
+    },
   },
   {
     "context": "ContextEditor > Editor",
     "bindings": {
-      "shift-f3": "search::SelectPreviousMatch"
-    }
+      "shift-f3": "search::SelectPreviousMatch",
+    },
   },
   {
     "context": "BufferSearchBar",
     "bindings": {
-      "f3": "search::SelectNextMatch"
-    }
+      "f3": "search::SelectNextMatch",
+    },
   },
   {
     "context": "ContextEditor > Editor",
     "bindings": {
-      "f3": "search::SelectNextMatch"
-    }
+      "f3": "search::SelectNextMatch",
+    },
   },
   {
     "context": "Editor",
@@ -195,10 +195,22 @@
         {
           "severity": {
             "min": "hint",
-            "max": "error"
-          }
-        }
-      ]
+            "max": "error",
+          },
+        },
+      ],
+    },
+  },
+  {
+    "context": "(Editor && edit_prediction_conflict)",
+    "bindings": {
+      "alt-tab": "editor::AcceptNextLineEditPrediction"
+    }
+  },
+  {
+    "context": "(Editor && edit_prediction)",
+    "bindings": {
+      "tab": "editor::AcceptNextLineEditPrediction"
     }
   }
 ]

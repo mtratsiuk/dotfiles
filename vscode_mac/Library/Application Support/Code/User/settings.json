@@ -1,10 +1,11 @@
 {
+  "typescript.experimental.useTsgo": false,
   "editor.formatOnType": false,
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "modifications",
-  "editor.fontFamily": "'Consolas', 'Droid Sans Mono', monospace",
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
   "editor.fontSize": 16,
-  "editor.renderWhitespace": "boundary",
+  "editor.renderWhitespace": "all",
   "editor.cursorBlinking": "blink",
   "editor.cursorStyle": "underline",
   "editor.detectIndentation": true,
@@ -16,6 +17,7 @@
   "files.trimTrailingWhitespace": true,
   "files.autoSave": "off",
   "telemetry.telemetryLevel": "off",
+  "update.mode": "none",
   "workbench.editor.showTabs": "single",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -183,6 +185,7 @@
   "update.showReleaseNotes": false,
   "claudeCode.preferredLocation": "panel",
   "go.toolsManagement.autoUpdate": true,
+  "workbench.preferredHighContrastLightColorTheme": "Visual Studio Light",
 }
 // eslint projects formatting:
 //

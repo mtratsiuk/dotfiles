@@ -7,10 +7,21 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "features": {
+    "edit_prediction_provider": "none",
+  },
+  "show_edit_predictions": true,
   "current_line_highlight": "all",
   "agent": {
+    "enable_feedback": false,
     "button": true,
     "model_parameters": [],
+  },
+  "format_on_save": "off",
+  "languages": {
+    "TypeScript": {
+      "language_servers": ["!eslint", "vtsls"]
+    }
   },
   "collaboration_panel": {
     "button": false,
@@ -44,7 +55,7 @@
   },
   "relative_line_numbers": "disabled",
   "auto_update": false,
-  "disable_ai": true,
+  "disable_ai": false,
   "preview_tabs": {
     "enabled": false,
     "enable_preview_from_file_finder": false,
@@ -60,7 +71,7 @@
   "cursor_blink": true,
   "autosave": "on_focus_change",
   "buffer_font_fallbacks": ["Droid Sans Mono", "monospace"],
-  "buffer_font_family": "Consolas",
+  "buffer_font_family": ".ZedMono",
   "file_types": {
     "clojure": ["*.mt"],
   },
@@ -78,6 +89,10 @@
   "base_keymap": "VSCode",
   "theme": "One Light",
   "buffer_font_size": 16.0,
+  "buffer_font_features": {
+    "calt": false,
+    "liga": false,
+  },
   "theme_overrides": {
     "One Light": {
       "background": "#fdf6e3",
@@ -101,9 +116,9 @@
       // "editor.active_line.background": "#f00",
       // "editor.highlighted_line.background": "#f00",
       "editor.active_line_number": "#0b216f",
-      "editor.document_highlight.bracket_background": "#fdf6e3",
-      // "editor.document_highlight.read_background": "#f00",
-      // "editor.document_highlight.write_background": "#f00",
+      // "editor.document_highlight.bracket_background": "#222222ff",
+      // "editor.document_highlight.read_background": "#222222ff",
+      // "editor.document_highlight.write_background": "#222222ff",
       // "editor.foreground": "#f00",
       "title_bar.background": "#fdf6e3",
       "title_bar.inactive_background": "#fdf6e3",
