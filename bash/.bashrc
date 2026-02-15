@@ -27,6 +27,12 @@ webm_to_mp4() {
     ffmpeg -i "$1" "$2"
 }
 
+# based on https://girishjoshi.io/post/using-dslr-camera-as-webcam-on-linux/
+# dnf install gphoto2 v4l2loopback
+camera() {
+    gphoto2 --stdout --capture-movie | ffmpeg -i - -vcodec rawvideo -pix_fmt yuv420p -f v4l2 /dev/video0
+}
+
 . "$HOME/.cargo/env"
 
 export SDKMAN_DIR="$HOME/.sdkman"

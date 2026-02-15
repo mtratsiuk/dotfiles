@@ -15,8 +15,9 @@
 	cmd = 'code' --wait --diff $LOCAL $REMOTE
 
 [user]
-	email = misha+git@spris.dev
+	email = misha@spris.dev
 	name = Misha Tratsiuk
+	signingkey = B51A0CDECBE4B703
 
 [pull]
 	ff = only
@@ -24,6 +25,12 @@
 [push]
 	default = current
 	followTags = true
+
+[commit]
+	gpgsign = true
+
+[tag]
+	gpgsign = true
 
 [alias]
 	co = checkout
