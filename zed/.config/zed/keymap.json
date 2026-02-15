@@ -200,5 +200,17 @@
         }
       ]
     }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-3": "agent::ToggleFocus"
+    }
+  },
+  {
+    "context": "AgentPanel",
+      "bindings": {
+      "ctrl-1": "editor::ToggleFocus"
+    }
   }
 ]

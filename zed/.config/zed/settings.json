@@ -9,8 +9,28 @@
 {
   "current_line_highlight": "all",
   "agent": {
+    "default_profile": "write",
+    "default_model": {
+      "provider": "ollama",
+      "model": "kimi-k2.5",
+    },
     "button": true,
     "model_parameters": [],
+  },
+  "language_models": {
+    "ollama": {
+      "api_url": "https://ollama.com",
+      "available_models": [
+        {
+          "name": "kimi-k2.5",
+          "display_name": "kimi-k2.5",
+          "max_tokens": 32768,
+          // "supports_tools": true,
+          // "supports_thinking": true,
+          // "supports_images": true,
+        },
+      ],
+    },
   },
   "collaboration_panel": {
     "button": false,
@@ -44,7 +64,7 @@
   },
   "relative_line_numbers": "disabled",
   "auto_update": false,
-  "disable_ai": true,
+  "disable_ai": false,
   "preview_tabs": {
     "enabled": false,
     "enable_preview_from_file_finder": false,
@@ -60,7 +80,7 @@
   "cursor_blink": true,
   "autosave": "on_focus_change",
   "buffer_font_fallbacks": ["Droid Sans Mono", "monospace"],
-  "buffer_font_family": "Consolas",
+  "buffer_font_family": "Noto Sans Mono",
   "file_types": {
     "clojure": ["*.mt"],
   },
