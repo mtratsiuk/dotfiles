@@ -24,6 +24,7 @@ hidden = false
 [keys.normal]
 C-s = ":w"
 C-k = "toggle_comments"
+C-7 = "toggle_comments"
 X = ["extend_line_up", "extend_to_line_bounds"]
 p = "paste_before"
 C-v = ":clipboard-paste-before"

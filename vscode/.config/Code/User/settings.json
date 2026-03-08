@@ -2,7 +2,7 @@
   "editor.formatOnType": false,
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "modificationsIfAvailable",
-  "editor.fontFamily": "'Consolas', 'Droid Sans Mono', monospace",
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
   "editor.fontSize": 16,
   "editor.renderWhitespace": "boundary",
   "editor.cursorBlinking": "blink",
