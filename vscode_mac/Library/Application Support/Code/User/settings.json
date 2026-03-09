@@ -6,6 +6,7 @@
   "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
   "editor.fontSize": 16,
   "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
   "editor.cursorBlinking": "blink",
   "editor.cursorStyle": "underline",
   "editor.detectIndentation": true,
@@ -22,6 +23,12 @@
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.colorTheme": "Visual Studio Light",
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "*.tsx": "${capture}.ts, ${capture}.d.ts, ${capture}.d.ts.map",
+    "*.ts": "${capture}.js, ${capture}.ts, ${capture}.d.ts, ${capture}.d.ts.map"
+  },
   "window.menuBarVisibility": "toggle",
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
@@ -55,8 +62,23 @@
   "files.associations": {
     "*.mt": "clojure"
   },
+  "[bat][bibtex][c][clojure][coffeescript][cpp][csharp][css][cuda-cpp][dart][diff][dockerfile][dockercompose][fsharp][git-commit][git-rebase][go][groovy][handlebars][hlsl][html][ini][java][javascript][javascriptreact][json][jsonc][jsonl][julia][latex][less][lua][makefile][markdown][objective-c][objective-cpp][perl][php][plaintext][powershell][properties][pug][python][r][raku][razor][restructuredtext][ruby][rust][scss][shaderlab][shellscript][sql][swift][tex][typescript][typescriptreact][vb][xml][xsl][yaml]": {
+    "editor.renderWhitespace": "all",
+  },
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
   },
   "editor.guides.indentation": false,
   "rust-analyzer.inlayHints.chainingHints.enable": false,
@@ -157,9 +179,6 @@
       "editor.lineHighlightBackground": "#eee8d5"
     }
   },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
   "extensions.ignoreRecommendations": true,
   "github.copilot.enable": {
     "*": false,
@@ -169,12 +188,6 @@
   },
   "workbench.preferredHighContrastColorTheme": "Visual Studio Light",
   "editor.accessibilitySupport": "off",
-  "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
   "chat.commandCenter.enabled": false,
   "typescript.suggestionActions.enabled": false,
   "typescript.surveys.enabled": false,
