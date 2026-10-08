@@ -12,4 +12,4 @@ docker run --rm \
   -w /data \
   --user "$(id -u):$(id -g)" \
   ghcr.io/typst/typst:latest \
-  compile resume.typ
+  compile resume_one_pager.typ
